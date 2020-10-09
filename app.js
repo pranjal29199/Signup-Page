@@ -2,7 +2,7 @@ const express = require ("express");
 const bodyParser = require ("body-parser");
 const request = require ("request");
 const https = require ("https");
-
+// signup page
 
 const app = express();
 
@@ -32,9 +32,10 @@ app.post("/", function(req,res){
             }
         ]
     };
+    // data fetched
 
     const jsonData = JSON.stringify(data);
-
+// coverting to json
     
     const url = "https://us18.api.mailchimp.com/3.0/lists/1084b181a";
 
